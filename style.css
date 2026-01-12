@@ -29,15 +29,27 @@ body {
 
 /* Title */
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-size: 28px;
+}
+
+/* Dark mode toggle */
+.small-btn {
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #555;
+    color: white;
+    cursor: pointer;
 }
 
 /* Timer display */
 #timer {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 /* Buttons */
@@ -74,9 +86,28 @@ button {
     color: white;
 }
 
-/* Button hover effect */
+/* Button press effect */
 button:active {
     transform: scale(0.96);
+}
+
+/* Mode label */
+#mode-label {
+    margin-top: 15px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Progress circle */
+#progress {
+    margin: 20px auto;
+    display: block;
+}
+
+#fg-circle {
+    stroke-dasharray: 565;
+    stroke-dashoffset: 565;
+    transition: stroke-dashoffset 0.5s linear;
 }
 
 /* Dark mode */
